@@ -5,9 +5,9 @@
         <a href="/" class="navbar-brand">MEVN Stack</a>
       </div>
     </nav>
-    <div class="container pt-5">
+    <div class="container">
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-5 pt-3">
           <div class="card">
             <div class="card-body">
               <form @submit.prevent="sendTask">
@@ -37,7 +37,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-7 pt-3">
           <table class="table table-bordered">
             <thead>
               <tr>
