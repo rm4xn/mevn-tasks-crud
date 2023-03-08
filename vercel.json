@@ -1,6 +1,11 @@
 {
-    "version": 2,
     "buildCommand": "npx webpack --mode=production",
+    "builds": [
+        {
+            "src": "index.js",
+            "use": "@vercel/node"
+        }
+    ],
     "rewrites": [
         {
             "source": "/api/tasks/(.*)",

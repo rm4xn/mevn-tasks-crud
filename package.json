@@ -6,8 +6,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "vercel-build": "npx webpack --mode=production"
+    "dev": "nodemon index.js"
   },
   "author": "Max Ramos",
   "license": "ISC",
