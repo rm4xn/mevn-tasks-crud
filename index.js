@@ -17,12 +17,12 @@ import { fileURLToPath } from 'url'
   
 const app = express()
 
-// // Settings
-// app.set('port', process.env.PORT || 3000)
+// Settings
+app.set('port', process.env.PORT || 3000)
 
-// // Middlewares
+// Middlewares
 // app.use(morgan('dev'))
-// app.use(express.json())
+app.use(express.json())
 
 // // Routes
 // app.use('/api/tasks', tasksRouter)
