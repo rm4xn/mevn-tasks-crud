@@ -1,5 +1,5 @@
 // import mongoose from 'mongoose'
-// import express from 'express'
+import express from 'express'
 // import morgan from 'morgan'
 
 // import { dirname } from 'path'
@@ -15,7 +15,7 @@
 //   .then((db) => console.log('Database is connected.'))
 //   .catch((err) => console.log(err))
   
-// const app = express()
+const app = express()
 
 // // Settings
 // app.set('port', process.env.PORT || 3000)
@@ -30,6 +30,6 @@
 // // Static files
 // app.use(express.static(dirname(fileURLToPath(import.meta.url)) + '/dist'))
 
-// app.listen(app.get('port'))
+app.listen(app.get('port'))
 
 console.log('hola desde el index')
