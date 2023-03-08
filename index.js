@@ -2,8 +2,8 @@
 import express from 'express'
 // import morgan from 'morgan'
 
-// import { dirname } from 'path'
-// import { fileURLToPath } from 'url'
+import { dirname } from 'path'
+import { fileURLToPath } from 'url'
 
 // import tasksRouter from './src/routes/tasks.js'
 
@@ -28,7 +28,7 @@ const app = express()
 // app.use('/api/tasks', tasksRouter)
 
 // // Static files
-// app.use(express.static(dirname(fileURLToPath(import.meta.url)) + '/dist'))
+app.use(express.static(dirname(fileURLToPath(import.meta.url)) + '/dist'))
 
 app.listen(app.get('port'))
 
