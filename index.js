@@ -28,7 +28,7 @@ app.use(express.json())
 // app.use('/api/tasks', tasksRouter)
 
 // // Static files
-app.use(express.static(dirname(fileURLToPath(import.meta.url)) + '/dist'))
+app.use(express.static(dirname(fileURLToPath(import.meta.url)) + '/public'))
 
 app.listen(app.get('port'))
 
